@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const pxRe = /-?\d*[.\d]*px/g;
 const base64Re = /^data:\w+\/[a-zA-Z+\-.]+;base64,/i;
 
-const px2vw = px => Number(px) ? `${Math.round(Number(px) / 7.5 * 100000) / 100000}vw` : 0;
+const px2vw = px => Number(px) ? `${Math.round(Number(px) / 3.75 * 100000) / 100000}vw` : 0;
 
 const convertStringPx2vw = style => {
     if (!style) return style;
